@@ -63,7 +63,7 @@
         /// <summary>
         /// Attempts to update the model object from the values provided by given valueProvider.
         /// </summary>
-        /// <returns>True if the model object is updated succesfully with valid values. False otherwise.</returns>
+        /// <returns>True if the model object is updated successfully with valid values. False otherwise.</returns>
         public virtual bool TryUpdateModel<TModel>(TModel model) where TModel : class {
             return _page.TryUpdateModel<TModel>(model);
         }
@@ -72,7 +72,7 @@
         /// Attempts to update the model object from the values within a databound control. This
         /// must be invoked within the Select/Update/Delete/InsertMethods used for data binding. 
         /// </summary>
-        /// <returns>True if the model object is updated succesfully with valid values. False otherwise.</returns>
+        /// <returns>True if the model object is updated successfully with valid values. False otherwise.</returns>
         public virtual bool TryUpdateModel<TModel>(TModel model, IValueProvider valueProvider) where TModel : class {
             return _page.TryUpdateModel<TModel>(model, valueProvider);
         }
