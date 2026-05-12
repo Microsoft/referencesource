@@ -53,38 +53,38 @@ namespace System.Net.Sockets {
         ///       A blocking socket call was canceled.
         ///    </para>
         /// </devdoc>
-        Interrupted               = (10000+4),      //WSAEINTR
+        Interrupted               = 10004,      //WSAEINTR
         /// <devdoc>
         ///    <para>
         ///       [To be supplied.]
         ///    </para>
         /// </devdoc>
-        //WSAEBADF               = (10000+9),   //
+        //WSAEBADF               = 10009,   //
         /// <devdoc>
         ///    <para>
         ///       Permission denied.
         ///    </para>
         /// </devdoc>
-        AccessDenied              = (10000+13),      //WSAEACCES
+        AccessDenied              = 10013,      //WSAEACCES
         /// <devdoc>
         ///    <para>
         ///       Bad address.
         ///    </para>
         /// </devdoc>
-        Fault              = (10000+14),        //WSAEFAULT
+        Fault              = 10014,        //WSAEFAULT
         /// <devdoc>
         ///    <para>
         ///       Invalid argument.
         ///    </para>
         /// </devdoc>
-        InvalidArgument              = (10000+22),    //WSAEINVAL
+        InvalidArgument              = 10022,    //WSAEINVAL
         /// <devdoc>
         ///    <para>
         ///       Too many open
         ///       files.
         ///    </para>
         /// </devdoc>
-        TooManyOpenSockets              = (10000+24),  //WSAEMFILE
+        TooManyOpenSockets              = 10024,  //WSAEMFILE
 
 
         /*
@@ -95,213 +95,213 @@ namespace System.Net.Sockets {
         ///       Resource temporarily unavailable.
         ///    </para>
         /// </devdoc>
-        WouldBlock         = (10000+35),   //WSAEWOULDBLOCK
+        WouldBlock         = 10035,   //WSAEWOULDBLOCK
         /// <devdoc>
         ///    <para>
         ///       Operation now in progress.
         ///    </para>
         /// </devdoc>
-        InProgress         = (10000+36),  // WSAEINPROGRESS
+        InProgress         = 10036,  // WSAEINPROGRESS
         /// <devdoc>
         ///    <para>
         ///       Operation already in progress.
         ///    </para>
         /// </devdoc>
-        AlreadyInProgress            = (10000+37),  //WSAEALREADY
+        AlreadyInProgress            = 10037,  //WSAEALREADY
         /// <devdoc>
         ///    <para>
         ///       Socket operation on nonsocket.
         ///    </para>
         /// </devdoc>
-        NotSocket            = (10000+38),   //WSAENOTSOCK
+        NotSocket            = 10038,   //WSAENOTSOCK
         /// <devdoc>
         ///    <para>
         ///       Destination address required.
         ///    </para>
         /// </devdoc>
-        DestinationAddressRequired        = (10000+39), //WSAEDESTADDRREQ
+        DestinationAddressRequired        = 10039, //WSAEDESTADDRREQ
         /// <devdoc>
         ///    <para>
         ///       Message too long.
         ///    </para>
         /// </devdoc>
-        MessageSize            = (10000+40),  //WSAEMSGSIZE
+        MessageSize            = 10040,  //WSAEMSGSIZE
         /// <devdoc>
         ///    <para>
         ///       Protocol wrong type for socket.
         ///    </para>
         /// </devdoc>
-        ProtocolType          = (10000+41), //WSAEPROTOTYPE
+        ProtocolType          = 10041, //WSAEPROTOTYPE
         /// <devdoc>
         ///    <para>
         ///       Bad protocol option.
         ///    </para>
         /// </devdoc>
-        ProtocolOption         = (10000+42), //WSAENOPROTOOPT
+        ProtocolOption         = 10042, //WSAENOPROTOOPT
         /// <devdoc>
         ///    <para>
         ///       Protocol not supported.
         ///    </para>
         /// </devdoc>
-        ProtocolNotSupported     = (10000+43), //WSAEPROTONOSUPPORT
+        ProtocolNotSupported     = 10043, //WSAEPROTONOSUPPORT
         /// <devdoc>
         ///    <para>
         ///       Socket type not supported.
         ///    </para>
         /// </devdoc>
-        SocketNotSupported     = (10000+44), //WSAESOCKTNOSUPPORT
+        SocketNotSupported     = 10044, //WSAESOCKTNOSUPPORT
         /// <devdoc>
         ///    <para>
         ///       Operation not supported.
         ///    </para>
         /// </devdoc>
-        OperationNotSupported          = (10000+45), //WSAEOPNOTSUPP
+        OperationNotSupported          = 10045, //WSAEOPNOTSUPP
         /// <devdoc>
         ///    <para>
         ///       Protocol family not supported.
         ///    </para>
         /// </devdoc>
-        ProtocolFamilyNotSupported        = (10000+46), //WSAEPFNOSUPPORT
+        ProtocolFamilyNotSupported        = 10046, //WSAEPFNOSUPPORT
         /// <devdoc>
         ///    <para>
         ///       Address family not supported by protocol family.
         ///    </para>
         /// </devdoc>
-        AddressFamilyNotSupported        = (10000+47), //WSAEAFNOSUPPORT
+        AddressFamilyNotSupported        = 10047, //WSAEAFNOSUPPORT
         /// <devdoc>
         ///    Address already in use.
         /// </devdoc>
-        AddressAlreadyInUse          = (10000+48), // WSAEADDRINUSE
+        AddressAlreadyInUse          = 10048, // WSAEADDRINUSE
         /// <devdoc>
         ///    <para>
         ///       Cannot assign requested address.
         ///    </para>
         /// </devdoc>
-        AddressNotAvailable       = (10000+49), //WSAEADDRNOTAVAIL
+        AddressNotAvailable       = 10049, //WSAEADDRNOTAVAIL
         /// <devdoc>
         ///    <para>
         ///       Network is down.
         ///    </para>
         /// </devdoc>
-        NetworkDown            = (10000+50), //WSAENETDOWN
+        NetworkDown            = 10050, //WSAENETDOWN
         /// <devdoc>
         ///    <para>
         ///       Network is unreachable.
         ///    </para>
         /// </devdoc>
-        NetworkUnreachable         = (10000+51), //WSAENETUNREACH
+        NetworkUnreachable         = 10051, //WSAENETUNREACH
         /// <devdoc>
         ///    <para>
         ///       Network dropped connection on reset.
         ///    </para>
         /// </devdoc>
-        NetworkReset           = (10000+52), //WSAENETRESET
+        NetworkReset           = 10052, //WSAENETRESET
         /// <devdoc>
         ///    <para>
         ///       Software caused connection to abort.
         ///    </para>
         /// </devdoc>
-        ConnectionAborted        = (10000+53), //WSAECONNABORTED
+        ConnectionAborted        = 10053, //WSAECONNABORTED
         /// <devdoc>
         ///    <para>
         ///       Connection reset by peer.
         ///    </para>
         /// </devdoc>
-        ConnectionReset          = (10000+54), //WSAECONNRESET
+        ConnectionReset          = 10054, //WSAECONNRESET
         /// <devdoc>
         ///    No buffer space available.
         /// </devdoc>
-        NoBufferSpaceAvailable             = (10000+55), //WSAENOBUFS
+        NoBufferSpaceAvailable             = 10055, //WSAENOBUFS
         /// <devdoc>
         ///    <para>
         ///       Socket is already connected.
         ///    </para>
         /// </devdoc>
-        IsConnected             = (10000+56), //WSAEISCONN
+        IsConnected             = 10056, //WSAEISCONN
         /// <devdoc>
         ///    <para>
         ///       Socket is not connected.
         ///    </para>
         /// </devdoc>
-        NotConnected            = (10000+57), //WSAENOTCONN
+        NotConnected            = 10057, //WSAENOTCONN
         /// <devdoc>
         ///    <para>
         ///       Cannot send after socket shutdown.
         ///    </para>
         /// </devdoc>
-        Shutdown           = (10000+58), //WSAESHUTDOWN
+        Shutdown           = 10058, //WSAESHUTDOWN
         /// <devdoc>
         ///    <para>
         ///       [To be supplied.]
         ///    </para>
         /// </devdoc>
-     //   WSAETOOMANYREFS        = (10000+59), //WSAETOOMANYREFS
+     //   WSAETOOMANYREFS        = 10059, //WSAETOOMANYREFS
         /// <devdoc>
         ///    <para>
         ///       Connection timed out.
         ///    </para>
         /// </devdoc>
-        TimedOut           = (10000+60), //WSAETIMEDOUT
+        TimedOut           = 10060, //WSAETIMEDOUT
         /// <devdoc>
         ///    <para>
         ///       Connection refused.
         ///    </para>
         /// </devdoc>
-        ConnectionRefused        = (10000+61), //WSAECONNREFUSED
+        ConnectionRefused        = 10061, //WSAECONNREFUSED
         /// <devdoc>
         ///    <para>
         ///       [To be supplied.]
         ///    </para>
         /// </devdoc>
-      //  WSAELOOP               = (10000+62),
+      //  WSAELOOP               = 10062,
         /// <devdoc>
         ///    <para>
         ///       [To be supplied.]
         ///    </para>
         /// </devdoc>
-     //   WSAENAMETOOLONG        = (10000+63),
+     //   WSAENAMETOOLONG        = 10063,
         /// <devdoc>
         ///    <para>
         ///       Host is down.
         ///    </para>
         /// </devdoc>
-        HostDown           = (10000+64), //WSAEHOSTDOWN
+        HostDown           = 10064, //WSAEHOSTDOWN
         /// <devdoc>
         ///    <para>
         ///       No route to host.
         ///    </para>
         /// </devdoc>
-        HostUnreachable        = (10000+65), //WSAEHOSTUNREACH
+        HostUnreachable        = 10065, //WSAEHOSTUNREACH
         /// <devdoc>
         ///    <para>
         ///       [To be supplied.]
         ///    </para>
         /// </devdoc>
-       // WSAENOTEMPTY           = (10000+66),
+       // WSAENOTEMPTY           = 10066,
         /// <devdoc>
         ///    <para>
         ///       Too many processes.
         ///    </para>
         /// </devdoc>
-        ProcessLimit            = (10000+67), //WSAEPROCLIM
+        ProcessLimit            = 10067, //WSAEPROCLIM
         /// <devdoc>
         ///    <para>
         ///       [To be supplied.]
         ///    </para>
         /// </devdoc>
-      //  WSAEUSERS              = (10000+68),
+      //  WSAEUSERS              = 10068,
         /// <devdoc>
         ///    <para>
         ///       [To be supplied.]
         ///    </para>
         /// </devdoc>
-      //  WSAEDQUOT              = (10000+69),
+      //  WSAEDQUOT              = 10069,
         /// <devdoc>
         ///    <para>
         ///       [To be supplied.]
         ///    </para>
         /// </devdoc>
-       // WSAESTALE              = (10000+70),
+       // WSAESTALE              = 10070,
         /// <devdoc>
         ///    <para>
         ///       [To be supplied.]
@@ -315,31 +315,31 @@ namespace System.Net.Sockets {
         ///       Network subsystem is unavailable.
         ///    </para>
         /// </devdoc>
-        SystemNotReady         = (10000+91), //WSASYSNOTREADY
+        SystemNotReady         = 10091, //WSASYSNOTREADY
         /// <devdoc>
         ///    <para>
         ///       Winsock.dll out of range.
         ///    </para>
         /// </devdoc>
-        VersionNotSupported     = (10000+92), //WSAVERNOTSUPPORTED
+        VersionNotSupported     = 10092, //WSAVERNOTSUPPORTED
         /// <devdoc>
         ///    <para>
         ///       Successful startup not yet performed.
         ///    </para>
         /// </devdoc>
-        NotInitialized      = (10000+93), //WSANOTINITIALISED
+        NotInitialized      = 10093, //WSANOTINITIALISED
 
 
-       // WSAEREMOTE             = (10000+71),
+       // WSAEREMOTE             = 10071,
         /// <devdoc>
         ///    <para>
         ///       Graceful shutdown in progress.
         ///    </para>
         /// </devdoc>
-        Disconnecting             = (10000+101), //WSAEDISCON
+        Disconnecting             = 10101, //WSAEDISCON
 
 
-        TypeNotFound             = (10000+109), //WSATYPE_NOT_FOUND
+        TypeNotFound             = 10109, //WSATYPE_NOT_FOUND
 
 
         /*
@@ -348,7 +348,7 @@ namespace System.Net.Sockets {
          * retrieved via WSAGetLastError() and must therefore follow
          * the rules for avoiding clashes with error numbers from
          * specific implementations or language run-time systems.
-         * For this reason the codes are based at 10000+1001.
+         * For this reason the codes are based at 11001.
          * Note also that [WSA]NO_ADDRESS is defined only for
          * compatibility purposes.
          */
@@ -360,25 +360,25 @@ namespace System.Net.Sockets {
         ///       Host not found (Authoritative Answer: Host not found).
         ///    </para>
         /// </devdoc>
-        HostNotFound      = (10000+1001), //WSAHOST_NOT_FOUND
+        HostNotFound      = 11001, //WSAHOST_NOT_FOUND
         /// <devdoc>
         ///    <para>
         ///       Nonauthoritative host not found (Non-Authoritative: Host not found, or SERVERFAIL).
         ///    </para>
         /// </devdoc>
-        TryAgain           = (10000+1002), //WSATRY_AGAIN
+        TryAgain           = 11002, //WSATRY_AGAIN
         /// <devdoc>
         ///    <para>
         ///       This is a nonrecoverable error (Non recoverable errors, FORMERR, REFUSED, NOTIMP).
         ///    </para>
         /// </devdoc>
-        NoRecovery         = (10000+1003), //WSANO_RECOVERY
+        NoRecovery         = 11003, //WSANO_RECOVERY
         /// <devdoc>
         ///    <para>
         ///       Valid name, no data record of requested type.
         ///    </para>
         /// </devdoc>
-        NoData             = (10000+1004), //WSANO_DATA
+        NoData             = 11004, //WSANO_DATA
 
 
 
